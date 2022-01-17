@@ -8,10 +8,15 @@ jobs:
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
         - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
         - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+        - run: sdfgsdfsdf
+        - name: Next step
+          if: ${{ failure() }}
+          run: echo "Above step failed and sending mock email 🐱‍🏍"
+          
         
     
   Perform_second_job:
-    runs-on: windows-latest
+    runs-on: linux-latest
     needs: Peform_first_job
     name: Second Job
     steps:
