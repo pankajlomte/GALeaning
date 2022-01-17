@@ -22,7 +22,7 @@ jobs:
         
     
   Perform_second_job:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     if: ${{ always() }}
     needs: Peform_first_job
     name: Second Job
