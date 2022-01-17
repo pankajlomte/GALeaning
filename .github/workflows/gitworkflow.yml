@@ -17,8 +17,7 @@ jobs:
       - run: echo "Starting new job execution"
       - name: Checkout
         uses: actions/checkout@v2.4.0
-        with: | 
-          echo "This repo name ${{ github.repository }}"
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
     
       
   
