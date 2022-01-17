@@ -43,7 +43,7 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - name: Run a script file
         if: ${{ always() }}
-        run: ./run.sh
+        run: sh ./run.sh
         shell: bash
     
       
