@@ -12,12 +12,14 @@ jobs:
     
   Perform_second_job:
     runs-on: windows-latest
+    needs: Peform_first_job
     name: Second Job
     steps:
       - run: echo "Starting new job execution"
       - name: Checkout
         uses: actions/checkout@v2.4.0
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
     
       
   
