@@ -44,7 +44,7 @@ jobs:
       - name: Run a script file
         if: ${{ always() }}
         run: sh ./run.sh
-        shell: bash
+        shell: pwsh
     
       
   
