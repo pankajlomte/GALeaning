@@ -17,7 +17,7 @@ jobs:
           run: echo "Will run regardless of failed or pass above steps"
         - name: Run a script file
           if: ${{ always() }}
-          run: ./run.sh
+          run: sh ./run.sh
           
         
     
