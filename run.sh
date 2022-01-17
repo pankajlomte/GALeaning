@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 echo "Running from Shell script"
 echo "List all directory of the runner machine"
 ls -l
